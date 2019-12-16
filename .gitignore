@@ -33,5 +33,5 @@ build/
 
 ### Java ####
 .target
-
+/docker/citygroove-0.0.1-SNAPSHOT.jar
 

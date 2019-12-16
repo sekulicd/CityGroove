@@ -67,7 +67,11 @@ public class CityServiceImpl implements CityService{
             throw new UserNotFoundException(cityLikeDto.getUserName());
         }
 
-        city.setFavouriteCount(city.getFavouriteCount() - 1);
+        if (city.getFavouriteCount() > 0) {
+            city.setFavouriteCount(city.getFavouriteCount() - 1);
+        }else{
+            return;
+        }
 
         user.getLikedCities().remove(city);
         userRepository.save(user);
