@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  city-groove:
+    image: citygroove-spring-boot
+    networks:
+      - citygroove
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysqldb
+ 
+  mysqldb:
+    image: mysql:8
+    networks:
+      - citygroove
+    environment:
+      - MYSQL_ROOT_PASSWORD=sa
+      - MYSQL_DATABASE=citygroove
+      - MYSQL_USER=sa
+      - MYSQL_PASSWORD=sa
+
+networks:
+  citygroove:
+    internal: true

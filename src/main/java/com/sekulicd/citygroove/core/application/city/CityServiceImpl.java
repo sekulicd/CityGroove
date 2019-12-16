@@ -74,9 +74,9 @@ public class CityServiceImpl implements CityService{
     }
 
     @Override
-    public List<CityUserResponse> getUserCityLikes() throws CustomException {
-        List<User> users = userRepository.findAll();
-        return cityDomainMapper.convert(users);
+    public List<CityLikesResponse> getCityLikes() throws CustomException {
+        List<City> cities = (List<City>) cityRepository.findAll(Sort.by("favouriteCount").descending());
+        return cityDomainMapper.convert(cities);
     }
 
     @Override

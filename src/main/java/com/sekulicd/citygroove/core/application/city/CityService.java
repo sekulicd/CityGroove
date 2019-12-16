@@ -8,6 +8,6 @@ public interface CityService {
    void insertCity(CityDto cityDto) throws CustomException;
    void addToFavouritesList(CityLikeDto cityLikeDto) throws CustomException;
    void removeFromFavouritesList(CityLikeDto cityLikeDto) throws CustomException;
-   List<CityUserResponse> getUserCityLikes() throws CustomException;
+   List<CityLikesResponse> getCityLikes() throws CustomException;
    CityResponse findAll(String sortByParam) throws CustomException;
 }

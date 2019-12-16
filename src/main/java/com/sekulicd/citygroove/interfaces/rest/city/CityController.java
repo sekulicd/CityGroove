@@ -40,8 +40,8 @@ public class CityController {
     }
 
     @GetMapping(value = "/public/likes", consumes = "application/json", produces = "application/json")
-    public ResponseEntity<?> getUserCityLikes(){
-        List<CityUserResponse>  response = cityService.getUserCityLikes();
+    public ResponseEntity<?> getCityLikes(){
+        List<CityLikesResponse>  response = cityService.getCityLikes();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

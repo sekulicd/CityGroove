@@ -4,6 +4,7 @@ import com.sekulicd.citygroove.core.domain.identity.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,10 +19,11 @@ public class CityDomainMapper {
         return city;
     }
 
-    List<CityUserResponse> convert(List<User> users){
-        List<CityUserResponse> response = users
+    List<CityLikesResponse> convert(List<City> cities){
+        List<CityLikesResponse> response = cities
                 .stream()
-                .map(user -> new CityUserResponse(user.getUserName(), user.getLikedCities()))
+                .sorted(Comparator.comparing(City::getFavouriteCount).reversed())
+                .map(city -> new CityLikesResponse(city.getName(), city.getFavouriteCount()))
                 .collect(Collectors.toList());
         return response;
     }
