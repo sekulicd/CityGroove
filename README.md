@@ -11,9 +11,13 @@ Create small Spring boot application and try following concepts:
     1.3 Test receiving input through body/query params
     
 2. Security with JWT token
-    1.1 Filter
-    1.2 AuthProvider
-    1.3 AuthManger
+
+    2.1 Filter
+    
+    2.2 AuthProvider
+    
+    2.3 AuthManger
+    
 3. Exception handling with custom exceptions
 4. Spring Data with MySql and H2 DB for testing
 6. Try software architecture based on article:
