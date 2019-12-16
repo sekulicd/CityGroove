@@ -9,8 +9,6 @@ import com.sekulicd.citygroove.core.exception.CityNotFoundException;
 import com.sekulicd.citygroove.core.exception.CustomException;
 import com.sekulicd.citygroove.core.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 

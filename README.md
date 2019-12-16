@@ -1,5 +1,27 @@
 # City Groove
 
+### Goals of the project
+Create small Spring boot application and try following concepts:
+1. REST Api
+    1.1 GET/POST/DELETE
+    1.2 Consume/Produce JSON
+    1.3 Test receiving input through body/query params
+2. Security with JWT token
+    1.1 Filter
+    1.2 AuthProvider
+    1.3 AuthManger
+3. Exception handling with custom exceptions
+4. Spring Data with MySql and H2 DB for testing
+6. Try software architecture based on article:
+
+    https://herbertograca.com/2019/06/05/reflecting-architecture-and-domain-in-code/
+5. Dockerizing app
+
+Missing:
+1. Logging
+2. Better test coverage
+3. Swagger documentation 
+
 ### Installing
 Clone repository:
 ```

@@ -4,7 +4,6 @@ import com.sekulicd.citygroove.core.domain.identity.User;
 import com.sekulicd.citygroove.core.exception.CustomException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-
 import java.util.List;
 
 public interface UserService{

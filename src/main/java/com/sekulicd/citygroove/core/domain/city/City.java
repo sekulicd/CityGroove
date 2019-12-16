@@ -1,11 +1,8 @@
 package com.sekulicd.citygroove.core.domain.city;
 
-import com.sekulicd.citygroove.core.domain.identity.User;
 import lombok.*;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Set;
 
 @Getter
 @Setter

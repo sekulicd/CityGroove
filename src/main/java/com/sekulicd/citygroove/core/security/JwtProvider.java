@@ -2,15 +2,12 @@ package com.sekulicd.citygroove.core.security;
 
 import java.util.Base64;
 import java.util.Date;
-
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
-
 import com.sekulicd.citygroove.core.application.identity.UserService;
 import com.sekulicd.citygroove.core.exception.CustomException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;

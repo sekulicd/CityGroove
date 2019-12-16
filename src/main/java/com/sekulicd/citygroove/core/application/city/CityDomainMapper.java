@@ -1,6 +1,5 @@
 package com.sekulicd.citygroove.core.application.city;
 import com.sekulicd.citygroove.core.domain.city.City;
-import com.sekulicd.citygroove.core.domain.identity.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
