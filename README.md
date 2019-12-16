@@ -3,9 +3,13 @@
 ### Goals of the project
 Create small Spring boot application and try following concepts:
 1. REST Api
+
     1.1 GET/POST/DELETE
+    
     1.2 Consume/Produce JSON
+    
     1.3 Test receiving input through body/query params
+    
 2. Security with JWT token
     1.1 Filter
     1.2 AuthProvider
